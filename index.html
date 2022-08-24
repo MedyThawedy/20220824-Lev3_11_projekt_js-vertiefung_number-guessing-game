@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <article>
+            <div>
+                <h1>in how many rounds you think you can guess the numbers?</h1>
+                <div id="idRadioButtonsDiv">
+                    <input type="radio" id="r4" value="4" name="rbRounds" onclick="fnSetRounds(4)"><label
+                        for="">4</label>
+                    <input type="radio" id="r5" value="5" name="rbRounds" onclick="fnSetRounds(5)"><label
+                        for="">5</label>
+                    <input type="radio" id="r6" value="6" name="rbRounds" onclick="fnSetRounds(6)"><label
+                        for="">6</label>
+                    <input type="radio" id="rCustom" value="custom" name="rbRounds" onclick="fnSetRounds('cs')"><label
+                        for="">custom</label>
+                    <input type="number" id="inputCustom" oninput="fnInputCuston()" onsubmit="return validateForm()">
+                </div>
+                <div>
+                    <p id="idPRound"></p>
+                    <p>/</p>
+                    <p id="idPRounds"></p>
+                </div>
+            </div>
+            <div>
+                <input type="number" id="inputNr">
+                <button id="idGuess">guess</button>
+            </div>
+            <div id="idPGameResults"></div>
+
+        </article>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

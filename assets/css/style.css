@@ -1,0 +1,68 @@
+#inputCustom {
+    display: none;
+}
+
+body>main>article>div:nth-child(1) {
+    border: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 81%;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body>main>article>div:nth-child(2) {
+    border: 1px solid lightgrey;
+    width: 50%;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#inputNr {
+    font-size: 41px;
+    height: 148px;
+    border: 1px solid lightgrey;
+    margin-top: 3vh;
+    text-align: center;
+}
+
+#idPGameResults {
+    font-size: 20px;
+    text-align: center;
+}
+
+#idGuess {
+    margin-bottom: 5vh;
+    padding: 17px;
+    width: 205px;
+    background: white;
+    color: black;
+    font-size: 26px;
+    border-radius: 6px;
+    margin-top: 4vh;
+}
+
+#idGuess:hover {
+    background: gray;
+    color: black;
+}
+
+#idPRound,
+#idPRounds,
+body>main>article>div:nth-child(1)>div:nth-child(3)>p:nth-child(2) {
+    font-size: 20px;
+}
